@@ -1,0 +1,159 @@
+
+:root{
+    --bg-color: #fff;
+    --text-color: #000;
+    --primary-color: #fff
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+[data-theme="dark"]{
+    --bg-color: #222;
+    --text-color: #fff;
+    --primary-color: #0e0
+}
+[data-theme="light"]{
+    --bg-color: #fff;
+    --text-color: #222;
+    --primary-color: #0e0
+}
+
+*{
+    transition: all 0.4s;
+}
+
+body{
+    font-family: 'Inter';
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1.2rem;
+    height: 3000px;
+}
+
+/* Header */
+
+header{
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    padding: 15px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    font-weight: 600;
+}
+#btn-theme{
+    background: none;
+    border: none;
+}
+#btn-theme:hover{
+    background-color: aqua;
+}
+
+header img{
+    height: 40px;
+    width: 40px;
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* Main */
+section{
+    scroll-margin-top: 90px;
+}
+/* Apresentação */
+section#apresentação{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section#apresentação #img3D{
+    width: 80%;
+    padding-top: 130px;
+    padding-bottom: 70px;
+}
+section#apresentação h1{
+    font-size: 2.7rem;
+    text-align: center;
+}
+section#apresentação h1 span{
+    color: var(--primary-color);
+}
+
+
+/* Sobre */
+section#sobreMim{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+}
+section#sobreMim h2{
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+section#sobreMim p{
+    max-width: 80%;
+    justify-self: center;
+}
+
+
+/* Habilidades */
+section#habilidades{
+    width: 90%;
+    justify-self: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section#habilidades .habilidades-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+section#habilidades h2{
+    color: var(--primary-color);
+    padding-bottom: 40px;
+}
+section#habilidades .habilidade{
+    border: 2px solid var(--primary-color);
+    background-color: var(--bg-color);
+    border-radius: 20px;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    font-size: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section#habilidades .habilidade img{
+    height: 60px;
+    margin-bottom: 5px;
+}
+section#habilidades .habilidade:hover{
+    z-index: 100;
+    scale: 1.3;
+}
