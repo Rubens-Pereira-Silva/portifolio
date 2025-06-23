@@ -15,7 +15,7 @@ html{
     --primary-color: #0e0
 }
 [data-theme="light"]{
-    --bg-color: #fff;
+    --bg-color: #ede;
     --text-color: #222;
     --primary-color: #070
 }
@@ -30,6 +30,12 @@ body{
     color: var(--text-color);
     font-size: 1.2rem;
     height: 3000px;
+}
+a{
+    text-decoration: none;
+}
+a,button{
+    cursor:pointer
 }
 
 /* Header */
@@ -66,7 +72,7 @@ header nav ul{
     gap: 12px;
 }
 header nav ul li a{
-    text-decoration: none;
+
     font-size: 1.1rem;
     color: var(--bg-color);
 }
@@ -172,14 +178,31 @@ section#projetos h2{
     color: var(--primary-color);
 }
 section#projetos .container-projetos{
-    border: 2px solid blue;
     width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+section#projetos .container-projetos .projeto{
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 20px;
+    color: black;
+    font-weight: 700;
+    margin: 20px;
+    border: none;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+}
+section#projetos .container-projetos .projeto img{
+    width: 100%;
+    border-radius: 10px;
+}
+section#projetos .container-projetos .projeto .tecnologiasUsadas{
     display: flex;
     justify-content: center;
 }
-section#projetos .container-projetos .projeto{
-    border: 2px solid red;
-    text-align: center;
-    height: 200px;
-    width: 100%;
+section#projetos .container-projetos .projeto .tecnologiasUsadas .tecnologia{
+    width: 40px;
+    margin: 10px;
 }
