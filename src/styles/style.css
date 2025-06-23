@@ -17,7 +17,7 @@ html{
 [data-theme="light"]{
     --bg-color: #fff;
     --text-color: #222;
-    --primary-color: #0e0
+    --primary-color: #070
 }
 
 *{
@@ -68,6 +68,7 @@ header nav ul{
 header nav ul li a{
     text-decoration: none;
     font-size: 1.1rem;
+    color: var(--bg-color);
 }
 
 /* Main */
